@@ -159,6 +159,45 @@ header .profile-image:hover {
   margin-bottom: 50px;
 }
 
+/* Banner Styles */
+
+/* Main Content Area Styles */
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #222;
+  transition: all 0.5s;
+  text-align: left;
+}
+
+.card:hover {
+  border-color: #e96656;
+}
+
+ul.skills {
+  padding: 5px;
+  text-align: center;
+}
+
+.skills li {
+  display: inline-block;
+  background: #e65541;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+.skills li:nth-child(even) {
+  background: #b89c99;
+}
+
+main {
+  padding-top: 50px;
+}
+
 /* Footer Styles */
 
 footer {
