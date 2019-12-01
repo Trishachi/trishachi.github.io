@@ -158,3 +158,53 @@ header .profile-image:hover {
   color: #fff;
   margin-bottom: 50px;
 }
+
+/* Footer Styles */
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 0;
+  text-align: center;
+}
+
+p.copyright {
+  margin: 15px 0;
+}
+
+footer .copyright {
+  font-size: 0.85em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  font-size: 1.2em;
+  color: white;
+  margin-left: 5px;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: #e65541;
+  background-size: 30px 30px;
+  border-radius: 50%;
+  opacity: 0.65;
+  transition: all 0.25s;
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+.clearfix {
+  clear: both;
+}
