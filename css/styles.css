@@ -160,6 +160,20 @@ header .profile-image:hover {
 }
 
 /* Banner Styles */
+.banner {
+  height: 300px;
+  background: url("../images/banner.jpg") no-repeat center bottom;
+  padding-top: 60px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.pageTitle {
+  color: #fff;
+  /* display: inline-block; */
+  margin-top: 190px;
+  float: left;
+}
 
 /* Main Content Area Styles */
 .card {
@@ -196,6 +210,74 @@ ul.skills {
 
 main {
   padding-top: 50px;
+}
+
+/* Contact Page Styles */
+#contactImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 3px #ccc;
+  transition: all 0.5s;
+}
+
+#contactImage:hover {
+  transform: scale(0.8) rotate(360deg);
+  border-color: #e96656;
+  box-shadow: 0 0 30px #222;
+}
+
+.contactBox {
+  margin: 30px auto;
+}
+
+.card.contact {
+  text-align: center;
+}
+
+.contact a.social {
+  margin: 10px 5px 0 5px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #e96656;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /* Footer Styles */
@@ -246,4 +328,28 @@ a.social:hover {
 
 .clearfix {
   clear: both;
+}
+
+/* Media Query for contact card on large screens */
+@media screen and (min-width: 720px) {
+  .flex {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .contact {
+    max-width: 705px;
+    height: 425px;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .card.contact {
+    margin: 50px auto;
+  }
+
+  .contactBox {
+    padding: 53px 40px 20px 40px;
+  }
 }
