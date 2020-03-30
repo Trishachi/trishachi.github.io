@@ -190,6 +190,24 @@ header .profile-image:hover {
   border-color: #e96656;
 }
 
+.resumeBtn,
+.resumeBtn:active,
+.resumeBtn:visited {
+  display: inline-block;
+  background: #e65541;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 15px 2px 2px 2px;
+  text-decoration: none;
+}
+
+.resumeBtn:hover {
+  background: #b89c99;
+  color: #fff;
+  text-decoration: none;
+}
+
 ul.skills {
   padding: 5px;
   text-align: center;

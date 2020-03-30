@@ -86,7 +86,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #bd5d38;
+  color: #e96656;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -183,4 +183,11 @@ a:focus,
 a:active {
   /* color: #824027; */
   color: #e96656;
+}
+
+@media print {
+  section.resume-section {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
 }
