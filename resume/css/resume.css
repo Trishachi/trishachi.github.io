@@ -185,9 +185,11 @@ a:active {
   color: #e96656;
 }
 
+/* Remove extra spacings on resume when printing */
 @media print {
   section.resume-section {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    min-height: 0vh;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
   }
 }
