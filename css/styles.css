@@ -231,6 +231,17 @@ main {
 }
 
 /* Portfolio Page Styles */
+.featured-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.featured-image {
+  margin-bottom: 1rem;
+}
+
 .projects-section {
   padding: 10rem 0;
 }
@@ -243,6 +254,18 @@ main {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
+  }
+
+  .featured-project {
+    margin-bottom: 3rem;
+  }
+
+  .featured-image {
+    margin-bottom: 0;
+  }
+
+  .featured-text {
+    text-align: left;
   }
 }
 
