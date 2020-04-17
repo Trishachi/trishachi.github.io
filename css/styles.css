@@ -2,6 +2,7 @@
 Styles for Portfolio Site
 Author - Chisom Trisha Okoye
 Version 1.0 - Date - 21-11-2019
+Edited: Version 2.0 - Date - 16-04-2020
 ***************************/
 
 /*  Global Styles   */
@@ -39,13 +40,18 @@ li {
   margin: 0;
 }
 
+.bg-black {
+  background-color: #161616 !important;
+}
+
 .siteBtn,
 .siteBtn:active,
 .siteBtn:visited {
   display: inline-block;
-  background: #e65541;
-  color: #fff;
+  background: transparent;
+  color: #e65541;
   padding: 5px 10px;
+  border: 1px solid #e65541;
   border-radius: 6px;
   margin: 15px 2px 2px 0;
   text-decoration: none;
@@ -53,7 +59,7 @@ li {
 
 .siteBtn:hover {
   background: #e65541;
-  opacity: 0.5;
+
   color: #fff;
   text-decoration: none;
 }
@@ -75,13 +81,13 @@ li {
 /* Top Menu/Navigation Styles */
 .navbar {
   min-height: 30px;
-  padding: 10px;
+  padding: 15px;
   letter-spacing: 0.05em;
   box-shadow: 0 0 30px #222;
   margin-bottom: 0px;
 }
 
-.navbar-default {
+.navbar-light {
   background-color: #fff;
   border-color: #e7e7e7;
   font-weight: 400;
@@ -93,32 +99,40 @@ li {
   font-size: 1.2em;
 }
 
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav > li > a {
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav > li > a {
   color: #222;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-light .navbar-nav .nav-link {
+  color: #222;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #e96656;
+}
+
+.navbar-light .navbar-nav > .active > a,
+.navbar-light .navbar-nav > .active > a:hover {
   color: #e96656;
   background-color: #fff;
 }
 
-.navbar-default a {
+.navbar-light a {
   transition: all 0.5s;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-light .navbar-nav .nav-link:hover {
   color: #e96656;
 }
 
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
+.navbar-light .navbar-toggler:focus,
+.navbar-light .navbar-toggler:hover {
   background-color: #e96656;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #222;
+.navbar-light .navbar-toggler {
+  color: #222;
 }
 
 /*  *********************************************************************************/
@@ -218,23 +232,15 @@ header .profile-image:hover {
   border-color: #e96656;
 }
 
-.resumeBtn,
-.resumeBtn:active,
-.resumeBtn:visited {
-  display: inline-block;
-  background: #e65541;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 6px;
-  margin: 15px 2px 2px 0;
-  text-decoration: none;
+.resumeBtn {
+  width: fit-content;
 }
 
-.resumeBtn:hover {
+/* .resumeBtn:hover {
   background: #b89c99;
   color: #fff;
   text-decoration: none;
-}
+} */
 
 ul.skills {
   padding: 5px;
@@ -259,64 +265,48 @@ main {
 }
 
 /* Portfolio Page Styles */
+
+.featured-image,
+.project-image {
+  transition: filter 0.5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+
+.featured-image:hover,
+.project-image:hover {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .projects-section .featured-text {
   padding: 2rem;
 }
 
-.featured-project {
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 1.5rem;
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #e65541;
+  }
 }
 
-.items-center {
-  align-items: center;
-  justify-content: center;
-}
-
-.featured-image {
-  margin-bottom: 1rem;
-  transition: filter 0.5s ease-in-out;
-  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(100%); /* FF 35+ */
-}
-
-.f .featured-text p {
-  margin-bottom: 0;
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
 }
 
 @media (min-width: 992px) {
-  .projects-section .featured-project {
-    margin-bottom: 3rem;
+  .projects-section .project-text {
+    padding: 5rem;
   }
-
-  .featured-image {
-    margin-bottom: 0;
-  }
-
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #e96656;
-  }
-
-  .projects-section .featured-text {
-    text-align: left;
-  }
-
-  .items-center {
-    display: flex;
-  }
-
-  .pr-zero {
-    padding-right: 0;
-  }
-
-  .pl-zero {
-    padding-left: 0;
+  .projects-section .project-text hr {
+    border-color: #e65541;
+    border-width: 0.25rem;
+    width: 30%;
   }
 }
 
@@ -393,7 +383,7 @@ main {
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
