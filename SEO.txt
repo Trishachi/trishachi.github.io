@@ -1,0 +1,14 @@
+Key Words = 
+
+Home Page -> Chisombili, Okoye, Omabu, Trisha, Trishachi, Full Stack Developer, Front End Developer, Web Developer, in Calgary, HTML, CSS, JavaScript, React, React.JS 
+
+Portfolio Page -> 
+
+Contact Page -> 
+
+
+Meta Tags 
+
+<meta name="author" content="Chisombili Trisha Okoye">
+<meta name="keywords" content="">
+<meta name="description" content="">
