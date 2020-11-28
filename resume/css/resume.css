@@ -185,6 +185,30 @@ a:active {
   color: #e96656;
 }
 
+.siteBtn,
+.siteBtn:active,
+.siteBtn:visited {
+  display: inline-block;
+  background: transparent;
+  color: #e65541;
+  padding: 5px 10px;
+  border: 1px solid #e65541;
+  border-radius: 6px;
+  margin: 15px 2px 2px 0;
+  text-decoration: none;
+}
+
+.siteBtn:hover {
+  background: #e65541;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.resumeDlBtn {
+  margin-left: 3rem;
+}
+
 /* Remove extra spacings on resume when printing */
 @media print {
   section.resume-section {
