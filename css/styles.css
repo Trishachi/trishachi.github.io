@@ -222,7 +222,7 @@ header .profile-image:hover {
 }
 
 /* Main Content Area Styles */
-.card {
+.card-home {
   margin: 30px;
   padding: 20px 40px 40px;
   border: 2px solid #ccc;
@@ -232,7 +232,7 @@ header .profile-image:hover {
   text-align: left;
 }
 
-.card:hover {
+.card-home:hover {
   border-color: #e96656;
 }
 
@@ -312,6 +312,10 @@ main {
     border-width: 0.25rem;
     width: 30%;
   }
+}
+
+.card-frontend-projects {
+  text-align: center;
 }
 
 /* Contact Page Styles */
