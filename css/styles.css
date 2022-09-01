@@ -130,6 +130,10 @@ li {
   color: #e96656;
 }
 
+.navbar-toggler {
+  padding: 0.25rem 0.65rem 0.25rem 0.75rem;
+}
+
 .navbar-light .navbar-toggler:focus,
 .navbar-light .navbar-toggler:hover {
   background-color: #e96656;
