@@ -152,9 +152,10 @@ li {
 }
 
 header {
-  background: url("../images/workspaceBb.jpg") no-repeat top center;
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(../images/workspaceBb.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top center;
+  background-repeat: no-repeat;
   overflow: hidden;
   padding: 25px 0;
   line-height: 1.5;
